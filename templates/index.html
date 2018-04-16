@@ -1,0 +1,16 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>首页</title>
+</head>
+{% load staticfiles %}
+<body>
+{#硬编码方式#}
+<img src="/static/image/avatar01.png" alt="头像1">
+<br>
+<br>
+{#使用static标签#}
+<img src="{% static 'image/avatar02.png' %}" alt="头像2">
+</body>
+</html>
